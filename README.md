@@ -58,7 +58,7 @@ cluster_addr = "https://127.0.0.1:8201"
    
 <img width="332" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/6a79f0f6-4a72-4fd2-a23d-a803e5d0be7e">
 
-## 3. Create one user for each client
+## 3. Create one user for all windows clients (for login Token)
 
 ## 4. Create new policy for this user
 
