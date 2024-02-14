@@ -105,9 +105,11 @@ and Do Not Attach 'default' Policy To Generated Tokens
 <img width="699" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/db35aec0-fb9e-4cad-addd-5156140fd947">
 
 
-## 6. Run Sourcecode with the account have local adminstrator right
+# Running 
 
-## 7. Run Sourcecode again and check the result
+## 1. Run Sourcecode with the account have local adminstrator right
+
+## 2. Run Sourcecode again and check the result
 
 kv_v1 is for change status {"Pending","Changing","Changed"} 
 
