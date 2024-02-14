@@ -104,9 +104,15 @@ capabilities = [ "read"]
 
 ## 5. Assign policy to user
 
+```
+
 vault write auth/userpass/users/<%user_name%>  policies=win_pass
 
+```
+
 and Do Not Attach 'default' Policy To Generated Tokens
+
+or setting in UI
 
 <img width="699" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/db35aec0-fb9e-4cad-addd-5156140fd947">
 
