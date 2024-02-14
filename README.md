@@ -119,3 +119,14 @@ kv is for password store (you can check version for all history change)
 <img width="592" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/47155f6e-d565-49ef-8485-a546c578b920">
 
 
+# Security considering
+
+1. The sourcecode has been written by vbs for easy deployment from GPO
+
+2. The vault URL and token is hard coding in the source code, so you shall review the user policy agan to ensure the user has no right to read KV storage.
+
+3. The function returnpass can be replace any logical by yourselves.
+
+4. User can use URL and Token in sourcecode to login, he can change status in kv_v1 and add new version of password to KV, but he can't get the list of history password.
+
+5. Audit and other ACL control should be established.
