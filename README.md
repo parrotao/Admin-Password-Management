@@ -64,6 +64,8 @@ cluster_addr = "https://127.0.0.1:8201"
 
 <<PolicyName = win_pass>>
 
+```
+
 path "kv/*" {
 
 capabilities = ["create", "read", "update", "delete", "list"]
@@ -93,6 +95,8 @@ path "sys/mounts" {
 capabilities = [ "read"]
 
 }
+
+```
 
 ## 5. Assign policy to user
 
