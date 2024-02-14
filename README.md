@@ -58,9 +58,9 @@ cluster_addr = "https://127.0.0.1:8201"
    
 <img width="332" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/6a79f0f6-4a72-4fd2-a23d-a803e5d0be7e">
 
-## 3. Create user for each client
+## 3. Create one user for each client
 
-## 4. Create new policy for the user
+## 4. Create new policy for this user
 
 <<PolicyName = win_pass>>
 
@@ -106,4 +106,16 @@ and Do Not Attach 'default' Policy To Generated Tokens
 
 
 ## 6. Run Sourcecode with the account have local adminstrator right
-##
+
+## 7. Run Sourcecode again and check the result
+
+kv_v1 is for change status {"Pending","Changing","Changed"} 
+
+* if you want to change the admin password, you can change the status to "Pending", After sucessful changed, the status value will be change to "Changed"
+
+<img width="328" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/bd80f1cd-b2ae-4fc0-a8ce-3e91a3aa7b79">
+
+kv is for password store (you can check version for all history change)
+<img width="592" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/47155f6e-d565-49ef-8485-a546c578b920">
+
+
