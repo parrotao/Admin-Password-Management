@@ -1,4 +1,4 @@
-# This code is for below security requirement
+# This code is for below ICT operation backgroud
 
 1. You have a number of Windows clients which already joined enterprise AD.
 2. based on security base line, most of your users have no local administrator right.
