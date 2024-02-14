@@ -4,7 +4,7 @@
 2. based on security base line, most of your users have no local administrator right.
 3. management on local administrator password is a huge workload for the ICT people.
    
-   how to do management password based on ISO27002:
+   management requirment for password based on ISO27002:
    
         1. administrator password shall be regular changed.
 
