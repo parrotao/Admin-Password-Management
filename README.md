@@ -144,3 +144,5 @@ kv is for password store (you can check version for all history change)
 4. User can use URL and Token in sourcecode to login, he can change status in kv_v1 and add new version of password to KV, but he can't get password as no permission on KV.
 
 5. Audit and other ACL control should be established.
+
+6. Production hardening for Vault shall be performed 
