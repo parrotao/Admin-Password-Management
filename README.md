@@ -76,15 +76,13 @@ capabilities = [ "update"]
 
 }
 
-path "sys/capabilities-self" { 
-
-    capabilities = ["create", "read", "update", "delete", "list"]
-
+path "sys/capabilities-self" {  
+ 
+    capabilities = [ "create", "read", "update", "delete", "list"]
+ 
 }
 
-path "sys/mounts/*"
-
-{
+path "sys/mounts/*"{
 
 capabilities = [ "read"]
 
