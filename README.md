@@ -24,6 +24,8 @@
 
 ## 1. Common config.hcl
 
+```
+
 ui = true
 
 disable_mlock = true
@@ -50,6 +52,8 @@ api_addr = "http://127.0.0.1:8200"
 
 cluster_addr = "https://127.0.0.1:8201"
 
+```
+
 ## 2. Secrets engines
 
    2 KV Secrets engines, one is version2 , the other is version 1.
@@ -68,13 +72,13 @@ cluster_addr = "https://127.0.0.1:8201"
 
 path "kv/*" {
 
-capabilities = ["create", "read", "update", "delete", "list"]
+capabilities =[ "update"]
 
 }
 
 path "kv_v1/*" {
 
-capabilities = [ "update"]
+capabilities =  ["create", "read", "update", "delete", "list"]
 
 }
 
