@@ -145,4 +145,10 @@ kv is for password store (you can check version for all history change)
 
 5. Audit and other ACL control should be established.
 
-6. Production hardening for Vault shall be performed 
+6. Production hardening for Vault shall be performed
+
+
+# Overall structure for Vault
+
+![image](https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/c772c53f-0f62-4492-810c-7d080d541812)
+
