@@ -147,6 +147,8 @@ kv is for password store (you can check version for all history change)
 
 6. Production hardening for Vault shall be performed
 
+7. Ensure these source code ONLY can be accessed by root or account with local admin in order to keep token in the source code.
+
 
 # Overall structure for Vault
 
