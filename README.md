@@ -19,7 +19,8 @@
     
     https://developer.hashicorp.com/vault/install?product_intent=vault
 
-
+    <License =BSL> https://www.hashicorp.com/license-faq
+   
 # Vault configuration
 
 ## 1. Common config.hcl
