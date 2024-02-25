@@ -153,5 +153,4 @@ kv is for password store (you can check version for all history change)
 
 # Overall structure for Vault
 
-![image](https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/c772c53f-0f62-4492-810c-7d080d541812)
-
+<img width="731" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/01e50096-eabe-4e14-a0de-6fc0bd35f677">
