@@ -118,9 +118,9 @@ or setting in UI
 <img width="699" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/db35aec0-fb9e-4cad-addd-5156140fd947">
 
 
-# Running 
+# Running
 
-## 1. Run Sourcecode with the account have local adminstrator right
+## 1. Run Sourcecode with the account have local adminstrator/root right
 
 ## 2. Run Sourcecode again and check the result
 
@@ -133,6 +133,15 @@ kv_v1 is for change status {"Pending","Changing","Changed"}
 kv is for password store (you can check version for all history change)
 <img width="592" alt="image" src="https://github.com/parrotao/Vault_Windows_Admins_Password_Change/assets/37337484/47155f6e-d565-49ef-8485-a546c578b920">
 
+## 3. OS supporting
+
+Windows 10/11/Server --> SourceCode.vbs
+
+  it supports all the local admin account which in admins group.
+
+Linux Script --> linux_vault (the function reset_root_password shall be modifief in linux_vault )
+
+  it only support root account.
 
 # Security considering
 
