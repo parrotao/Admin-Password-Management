@@ -139,7 +139,7 @@ kv is for password store (you can check version for all history change)
 
   it supports all the local admin account which in admins group.
 
-### Linux Script --> linux_vault (the function reset_root_password shall be modifief in linux_vault )
+### Linux Script --> linux_vault.sh (the function reset_root_password shall be modifief in linux_vault )
 
   it only support root account.
 
