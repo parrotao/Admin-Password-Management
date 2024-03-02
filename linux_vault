@@ -27,8 +27,9 @@ update_password(){
 reset_root_passwd(){
         rnum=$(($RANDOM*2024%9999))
         rstr=$(echo $rnum | md5sum | cut -c 1-8)
-        strpwd="ABdsrwx#*$rstr"
-        yes $strpwd | passwd root
+        root_password="ABdsrwx#*$rstr"
+		
+        yes $root_password | passwd root
         return $?
 }
 
@@ -47,6 +48,7 @@ else
 		if [ "$?" -eq 0 ]; then
 			update_password  $host $root_password
 			set_changed_status $host "Changed"
+			logger "root password set"
 		fi
 	fi 
 fi
