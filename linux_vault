@@ -1,0 +1,54 @@
+#! /bin/bash
+# jq is nesseary for this script
+
+URL_v1="http://127.0.0.1:8200/v1/kv_v1"
+URL_v2="http://127.0.0.1:8200/v1/kv/data"
+Token="123456789"
+
+host=$(hostname)
+
+
+get_changed_status(){
+	changed_status=$(curl -H "X-Vault-Token:$Token" -H "Content-Type:application/json" -X GET $URL_v1/$1 | jq -r '.data.Status')
+}
+
+set_changed_status(){
+	post_data=$(echo '{"Status":"'$2'"}')
+	curl -H "X-Vault-Token:$Token" -H "Content-Type:application/json" -X POST -d $post_data $URL_v1/$1 
+}
+
+update_password(){
+	post_data=$(echo '{"data":{"root":"'$2'"}}')
+
+	curl -H "X-Vault-Token:$Token" -H "Content-Type:application/json" -X POST -d $post_data $URL_v2/$1
+}
+
+
+reset_root_passwd(){
+
+	# Please add code for your to 
+	# 	Generate Password
+	#   Set Root Password
+	#   if successful return 0
+	#root_password="rootpassword"
+	return 0
+}
+
+if [ "$changed_status" == "null" ]; then
+	set_changed_status $host "Pending"
+else
+	
+	if [ "$changed_status" == "Pending" ] || [ "$changed_status" == "Changing" ]; then	
+		set_changed_status $host "Changing"
+		#get_changed_status "$host"
+		#echo $changed_status
+
+		reset_root_passwd
+		echo $?
+		if [ "$?" -eq 0 ]; then
+			update_password  $host $root_password
+			set_changed_status $host "Changed"
+		fi
+	fi 
+fi
+
