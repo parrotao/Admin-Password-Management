@@ -406,7 +406,7 @@ function returnpass(a)
 	r = int(rnd*100)
 	
 	no = sum * 2024 * r mod 9999
-	strpassw = "FY24@!cT" & right("0000" & no,4)
+	strpassw = "ABdsrwx#*" & right("0000" & no,4)
 	
 	returnpass = strpassw 
 end function 

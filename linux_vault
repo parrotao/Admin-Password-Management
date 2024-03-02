@@ -25,14 +25,13 @@ update_password(){
 
 
 reset_root_passwd(){
-
-	# Please add code for your to 
-	# 	Generate Password
-	#   Set Root Password
-	#   if successful return 0
-	#root_password="rootpassword"
-	return 0
+        rnum=$(($RANDOM*2024%9999))
+        rstr=$(echo $rnum | md5sum | cut -c 1-8)
+        strpwd="ABdsrwx#*$rstr"
+        yes $strpwd | passwd root
+        return $?
 }
+
 
 if [ "$changed_status" == "null" ]; then
 	set_changed_status $host "Pending"
