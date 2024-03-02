@@ -135,11 +135,11 @@ kv is for password store (you can check version for all history change)
 
 ## 3. OS supporting
 
-Windows 10/11/Server --> SourceCode.vbs
+### Windows 10/11/Server --> SourceCode.vbs
 
   it supports all the local admin account which in admins group.
 
-Linux Script --> linux_vault (the function reset_root_password shall be modifief in linux_vault )
+### Linux Script --> linux_vault (the function reset_root_password shall be modifief in linux_vault )
 
   it only support root account.
 
