@@ -1,7 +1,7 @@
 Const KV1_URL ="http://127.0.0.1:8200/v1/kv_v1/"
 Const KV2_URL ="http://127.0.0.1:8200/v1/kv/data/"
 
-Const CONS_Token="hvs.I9TJS8NAr2nX2iAspaF2qDy6"
+Const CONS_Token="hvs.12345678901234567890"
 Const EVENT_SUCCESS = 0
 
 Class VbsJson
