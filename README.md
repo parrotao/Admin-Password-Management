@@ -1,4 +1,4 @@
-# This code is for below ICT operation backgroud
+# This code is admin/root password management for below ICT operation backgroud
 
 1. You have a number of Windows clients which already joined enterprise AD or manage a number of linux host.
 2. based on security base line, most of your users have no local administrator right.
