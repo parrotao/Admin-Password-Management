@@ -34,7 +34,9 @@ reset_root_passwd(){
 }
 
 
-if [ "$changed_status" == "null" ]; then
+get_changed_status $host
+
+if [ "$changed_status" == "null" ] || [ "$changed_status" == "" ]; then
 	set_changed_status $host "Pending"
 else
 	
