@@ -1,5 +1,6 @@
 #! /bin/bash
 # jq is nesseary for this script
+# https://jqlang.github.io/jq/
 
 URL_v1="http://127.0.0.1:8200/v1/kv_v1"
 URL_v2="http://127.0.0.1:8200/v1/kv/data"
