@@ -339,7 +339,7 @@ Class KV_Password
 
     Public Function Update_KV_V2(ByRef sHost,ByRef skv2_pass_str)
 
-		Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
+		Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
 		secretJSON = "{""data"":{" & kv2_pass_str & "}}"
 		xmlhttp.Open "POST", KV2_URL & sHost, False
 		xmlhttp.SetRequestHeader "X-Vault-Token", CONS_Token
@@ -352,7 +352,7 @@ Class KV_Password
 	
     Public Function Get_Update_status(ByRef sHost)
 
-		Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
+		Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
 		xmlhttp.Open "GET", KV1_URL & sHost, False
 		xmlhttp.SetRequestHeader "X-Vault-Token", CONS_Token
 		xmlhttp.SetRequestHeader "Content-Type", "application/json"
@@ -364,7 +364,7 @@ Class KV_Password
 
 
     Public Function Set_Update_status(ByRef sHost, ByRef sStatus)
-		Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
+		Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
 		xmlhttp.Open "POST", KV1_URL & sHost, False
 		xmlhttp.SetRequestHeader "X-Vault-Token", CONS_Token
 		xmlhttp.SetRequestHeader "Content-Type", "application/json"
