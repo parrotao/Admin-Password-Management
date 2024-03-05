@@ -1,14 +1,9 @@
 # This code is admin/root password management for below ICT operation backgroud
 
 1. You have a number of Windows clients which already joined enterprise AD or manage a number of linux host.
-2. based on security base line, most of your users have no local administrator right.
-3. management on local administrator password is a huge workload for the ICT people.
-   
-   management requirment for password based on ISO27002:
-   
-        1. administrator password shall be regular changed.
-
-        2. aline with password policy.
+2. Windows admin needs to use domain account to login, and keep local administrator passwd sealed.
+3. Linux admin needs to use personal account to login and sudo to root right, and keep root passwd sealed.
+4. based on above operation environment, management on local administrator password is a huge workload for the ICT people, with ISO27002 password management requirment.  
 
 
 # Tools we used
