@@ -1,4 +1,4 @@
-# This code is admin/root password management for below ICT operation backgroud
+# It is for admin/root password management under below ICT operation backgroud
 
 1. A number of Windows clients are managed by enterprise AD .
 2. Windows Server, admin needs to use domain account to login, and keep local administrator password sealed.
